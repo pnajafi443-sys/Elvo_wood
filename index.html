@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ELVO WOOD | محصولات</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><span>ELVO</span><small>WOOD</small></a>
+  <nav class="desktop-nav"><a class="active" href="index.html">خانه</a><a href="#products">محصولات</a><a href="#about">درباره ما</a><a href="#contact">تماس با ما</a></nav>
+  <div class="header-actions"><button aria-label="جستجو" class="icon-btn" onclick="document.querySelector('#search').focus()">⌕</button><button aria-label="علاقه‌مندی" class="icon-btn">♡</button><button aria-label="منو" class="menu-btn" onclick="document.body.classList.toggle('menu-open')">☰</button></div>
+</header>
+<div class="mobile-menu"><button class="close-menu" onclick="document.body.classList.remove('menu-open')">×</button><a href="index.html">خانه</a><a href="#products">محصولات</a><a href="#about">درباره ما</a><a href="#contact">تماس با ما</a><div class="menu-bottom">چوب؛ زیبایی ماندگار طبیعت<br><small>ELVO WOOD</small></div></div>
+<main>
+<section class="listing-hero">
+  <div class="hero-overlay"></div>
+  <div class="listing-hero-copy"><p class="eyebrow">ELVO WOOD</p><h1>محصولات ما</h1><p>هر قطعه از محصولات ELVO WOOD با دقت و عشق طراحی و ساخته شده تا زیبایی و کارایی را در کنار هم تجربه کنید.</p><a class="hero-btn" href="#products">مشاهده محصولات <span>←</span></a></div>
+  <div class="hero-image"><div class="hero-wood-scene"><div class="board board-a"></div><div class="board board-b"></div><div class="utensils">✦ ✦ ✦</div><div class="plant">⌁</div></div></div>
+</section>
+<section id="products" class="catalog section">
+  <div class="breadcrumb">خانه <span>/</span> محصولات</div>
+  <div class="catalog-toolbar"><div class="result-count"><b id="product-count">۰</b> محصول</div><div class="toolbar-controls"><select id="sort" aria-label="مرتب‌سازی"><option value="new">مرتب‌سازی بر اساس جدیدترین</option><option value="price-asc">ارزان‌ترین</option><option value="price-desc">گران‌ترین</option></select><label class="search-box">⌕<input id="search" placeholder="جستجوی محصول..." aria-label="جستجو"></label></div></div>
+  <div class="catalog-layout">
+    <aside class="catalog-side"><div class="side-image"><div class="bowl-art"></div></div><h3>جزئیات کوچک<br>تفاوت‌های بزرگ<br>می‌سازند.</h3><div class="side-logo">— ELVO WOOD —</div><div class="side-features"><p>◈ <span>چوب طبیعی و باکیفیت</span></p><p>⌘ <span>طراحی مینیمال و کاربردی</span></p><p>◉ <span>ساخت دست‌ساز</span></p><p>▱ <span>ارسال به سراسر کشور</span></p></div><div class="side-contact">برای استعلام سفارش با ما در ارتباط باشید:<div><a href="https://instagram.com/elvo_wood" target="_blank">◎</a><a href="https://wa.me/00000000000" target="_blank">◔</a></div></div></aside>
+    <div class="products-area"><div id="products-grid" class="products-grid"><div class="loading">در حال دریافت محصولات...</div></div><div id="pagination" class="pagination"></div></div>
+  </div>
+</section>
+<section id="about" class="about-section"><div><p class="eyebrow">ABOUT ELVO</p><h2>چوب، ساده و ماندگار</h2><p>ELVO WOOD روی اکسسوری‌های چوبی آشپزخانه تمرکز دارد؛ محصولاتی کاربردی که با فرم ساده و بافت طبیعی چوب، بخشی از دکور خانه می‌شوند.</p></div><div class="about-quote">«جزئیات کوچک، حال‌وهوای یک آشپزخانه را تغییر می‌دهند.»</div></section>
+<section id="contact" class="contact-banner"><div><p class="eyebrow">ORDER & INQUIRY</p><h2>برای سفارش با ما در ارتباط باشید</h2><p>خرید و پرداخت آنلاین در سایت انجام نمی‌شود. برای استعلام قیمت و سفارش، با ما تماس بگیرید.</p></div><div class="contact-actions"><a id="wa" class="btn light" target="_blank">واتساپ</a><a id="ig" class="btn outline" target="_blank">اینستاگرام</a></div></section>
+</main>
+<footer><div class="footer-inner"><div class="brand footer-brand"><span>ELVO</span><small>WOOD</small></div><p>Wooden Accessories for a Better Life</p><div class="footer-links"><a href="#contact">تماس با ما</a><a href="#about">درباره ما</a><a href="#products">محصولات</a><a href="index.html">خانه</a></div></div></footer>
+<script src="config.js"></script><script src="app.js"></script>
+</body></html>
