@@ -4,10 +4,10 @@ const db = supabase.createClient(ELVO_CONFIG.supabaseUrl, ELVO_CONFIG.supabasePu
 const grid=document.querySelector('#products-grid'), search=document.querySelector('#search'), sort=document.querySelector('#sort'), countEl=document.querySelector('#productCount'), pagination=document.querySelector('#pagination');
 let products=[], page=1, perPage=8;
 const demo=[
+ {id:'demo-4',name:'جا دستمال کاغذی',price:890000,dimensions:'۱۵ × ۱۵ × ۲۲ سانتی‌متر',main_image:'__EMBED__:product-05.jpg'},
  {id:'demo-1',name:'جا قاشقی چوبی',price:780000,dimensions:'۱۳ × ۱۸ × ۱۲ سانتی‌متر',main_image:'__EMBED__:product-02.jpg'},
  {id:'demo-2',name:'تخته سرو مستطیل',price:1250000,dimensions:'۲۵ × ۳۵ سانتی‌متر',main_image:'__EMBED__:product-03.jpg'},
  {id:'demo-3',name:'نمکدان و فلفل‌پاش',price:890000,dimensions:'۶ × ۶ × ۱۲ سانتی‌متر',main_image:'__EMBED__:product-04.jpg'},
- {id:'demo-4',name:'جا دستمال کاغذی',price:650000,dimensions:'۱۵ × ۱۵ × ۲۲ سانتی‌متر',main_image:'__EMBED__:product-05.jpg'},
  {id:'demo-5',name:'ست ادویه‌جات',price:1280000,dimensions:'۱۵ × ۲۰ × ۲۵ سانتی‌متر',main_image:'__EMBED__:product-06.jpg'},
  {id:'demo-6',name:'کاسه چوبی',price:890000,dimensions:'۲۰ × ۲۰ × ۸ سانتی‌متر',main_image:'__EMBED__:product-07.jpg'},
  {id:'demo-7',name:'جا ابزار آشپزخانه',price:750000,dimensions:'۱۲ × ۱۷ × ۱۵ سانتی‌متر',main_image:'__EMBED__:product-08.jpg'},

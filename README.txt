@@ -1,9 +1,23 @@
-ELVO WOOD V10 FINAL
-- Final visual version based on the approved ELVO WOOD design.
-- Demo products are temporary visual/demo content and can be deleted later from the admin panel.
-- WhatsApp: 09390792997
+ELVO WOOD V11 — HIGH FIDELITY FINAL BUILD
+
+این نسخه برای نزدیک‌شدن دقیق به رفرنس‌های تاییدشده ELVO WOOD بازطراحی شده است.
+
+- هدر دسکتاپ با لوگو در چپ، منو در مرکز و آیکن‌ها در راست.
+- هیرو دسکتاپ با تصویر واقعی، متن سمت چپ و ساختار مشابه رفرنس.
+- گرید دسکتاپ ۴ ستونه در کنار سایدبار سمت چپ.
+- پس‌زمینه sage سبزِ ملایم مطابق نمونه تاییدشده.
+- موبایل دو ستونه، هدر و منوی تمام‌صفحه مطابق رفرنس.
+- تصاویر محصولات داخل کارت‌ها و صفحه جزئیات فعال هستند.
+- کلیک روی «مشاهده محصول» صفحه جزئیات همان محصول را باز می‌کند.
+- صفحه محصول شامل گالری، مشخصات، دکمه استعلام و نمای ۳۶۰ درجه است.
+- برای محصولات نمونه، نمای ۳۶۰ درجه با تصاویر نمونه شبیه‌سازی شده؛ محصولات واقعی از فریم‌های Supabase استفاده می‌کنند.
+- Instagram حذف شده است.
 - Telegram: https://t.me/ELVOWOOD
-- Instagram is intentionally removed for now.
-- Workshop: Karaj, Mohammadshahr, Shahrak Amir Kabir, Habib Ibn Mazaher St.
-- No checkout/payment is included.
-- Real products can be added from the admin panel after the design is finalized.
+- WhatsApp: 09390792997
+- آدرس کارگاه: کرج، محمدشهر، شهرک امیرکبیر، خیابان حبیب ابن مظاهر
+- متن درباره ما مطابق متن تاییدشده تنظیم شده است.
+- هیچ checkout / cart / payment وجود ندارد.
+- Supabase و پنل مدیریت حفظ شده‌اند.
+- محصولات نمونه فقط برای نمایش طراحی هستند و بعداً از پنل مدیریت قابل حذف/جایگزینی‌اند.
+
+انتشار: محتویات این فایل ZIP را در ریشه repository گیت‌هاب ELVO WOOD جایگزین کنید، commit کنید و اجازه دهید Vercel از branch main دوباره deploy شود.
