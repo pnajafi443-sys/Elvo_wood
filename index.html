@@ -3,33 +3,40 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>ELVO WOOD | محصولات</title>
+<meta name="description" content="ELVO WOOD — اکسسوری‌های چوبی آشپزخانه">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
 <header class="site-header">
-  <a class="brand" href="index.html"><span>ELVO</span><small>WOOD</small></a>
+  <a class="brand" href="index.html"><img src="assets/elvo-logo.svg" alt="ELVO WOOD"></a>
   <nav class="desktop-nav"><a class="active" href="index.html">خانه</a><a href="#products">محصولات</a><a href="#about">درباره ما</a><a href="#contact">تماس با ما</a></nav>
-  <div class="header-actions"><button aria-label="جستجو" class="icon-btn" onclick="document.querySelector('#search').focus()">⌕</button><button aria-label="علاقه‌مندی" class="icon-btn">♡</button><button aria-label="منو" class="menu-btn" onclick="document.body.classList.toggle('menu-open')">☰</button></div>
+  <div class="header-actions"><button class="icon-btn" id="focusSearch" aria-label="جستجو">⌕</button><button class="icon-btn" aria-label="علاقه‌مندی">♡</button><button class="icon-btn menu-btn" id="menuBtn" aria-label="منو">☰</button></div>
 </header>
-<div class="mobile-menu"><button class="close-menu" onclick="document.body.classList.remove('menu-open')">×</button><a href="index.html">خانه</a><a href="#products">محصولات</a><a href="#about">درباره ما</a><a href="#contact">تماس با ما</a><div class="menu-bottom">چوب؛ زیبایی ماندگار طبیعت<br><small>ELVO WOOD</small></div></div>
+<div id="mobileMenu" class="mobile-menu"><button id="closeMenu" class="menu-close">×</button><img src="assets/elvo-logo.svg" class="menu-logo" alt="ELVO WOOD"><nav><a href="index.html">خانه</a><a href="#products">محصولات</a><a href="#about">درباره ما</a><a href="#contact">تماس با ما</a></nav><div class="menu-bottom">چوب، زیبایی ماندگار طبیعت<small>— ELVO WOOD —</small></div></div>
 <main>
 <section class="listing-hero">
-  <div class="hero-overlay"></div>
-  <div class="listing-hero-copy"><p class="eyebrow">ELVO WOOD</p><h1>محصولات ما</h1><p>هر قطعه از محصولات ELVO WOOD با دقت و عشق طراحی و ساخته شده تا زیبایی و کارایی را در کنار هم تجربه کنید.</p><a class="hero-btn" href="#products">مشاهده محصولات <span>←</span></a></div>
-  <div class="hero-image"><div class="hero-wood-scene"><div class="board board-a"></div><div class="board board-b"></div><div class="utensils">✦ ✦ ✦</div><div class="plant">⌁</div></div></div>
+  <img src="assets/hero-reference.jpg" alt="محصولات چوبی ELVO WOOD" class="hero-photo">
+  <div class="hero-shade"></div>
+  <div class="hero-copy"><span class="eyebrow">ELVO WOOD</span><h1>محصولات ما</h1><p>هر قطعه از محصولات ELVO WOOD با دقت و عشق طراحی و ساخته شده تا زیبایی و کارایی را در کنار هم تجربه کنید.</p><a href="#products" class="hero-btn">مشاهده محصولات <span>←</span></a></div>
 </section>
-<section id="products" class="catalog section">
+<section id="products" class="catalog">
   <div class="breadcrumb">خانه <span>/</span> محصولات</div>
-  <div class="catalog-toolbar"><div class="result-count"><b id="product-count">۰</b> محصول</div><div class="toolbar-controls"><select id="sort" aria-label="مرتب‌سازی"><option value="new">مرتب‌سازی بر اساس جدیدترین</option><option value="price-asc">ارزان‌ترین</option><option value="price-desc">گران‌ترین</option></select><label class="search-box">⌕<input id="search" placeholder="جستجوی محصول..." aria-label="جستجو"></label></div></div>
+  <div class="catalog-toolbar"><span id="productCount">۱۲ محصول</span><div class="toolbar-controls"><select id="sort"><option value="new">مرتب‌سازی بر اساس جدیدترین</option><option value="price-asc">ارزان‌ترین</option><option value="price-desc">گران‌ترین</option></select><label class="search-box"><span>⌕</span><input id="search" placeholder="جستجوی محصول..." autocomplete="off"></label></div></div>
   <div class="catalog-layout">
-    <aside class="catalog-side"><div class="side-image"><div class="bowl-art"></div></div><h3>جزئیات کوچک<br>تفاوت‌های بزرگ<br>می‌سازند.</h3><div class="side-logo">— ELVO WOOD —</div><div class="side-features"><p>◈ <span>چوب طبیعی و باکیفیت</span></p><p>⌘ <span>طراحی مینیمال و کاربردی</span></p><p>◉ <span>ساخت دست‌ساز</span></p><p>▱ <span>ارسال به سراسر کشور</span></p></div><div class="side-contact">برای استعلام سفارش با ما در ارتباط باشید:<div><a href="https://instagram.com/elvo_wood" target="_blank">◎</a><a href="https://wa.me/00000000000" target="_blank">◔</a></div></div></aside>
-    <div class="products-area"><div id="products-grid" class="products-grid"><div class="loading">در حال دریافت محصولات...</div></div><div id="pagination" class="pagination"></div></div>
+    <aside class="catalog-side">
+      <div class="side-photo"><img src="assets/product-01.jpg" alt="جزئیات چوبی"><div class="side-caption">جزئیات کوچک<br><b>تفاوت‌های بزرگ</b><small>می‌سازند.</small></div></div>
+      <div class="side-brand">— ELVO WOOD —</div>
+      <div class="side-features"><p><span>◈</span> چوب طبیعی و باکیفیت</p><p><span>⌘</span> طراحی مینیمال و کاربردی</p><p><span>◌</span> ساخت دقیق و دست‌ساز</p><p><span>◇</span> ارسال به سراسر کشور</p></div>
+      <div class="side-contact"><b>برای استعلام قیمت و سفارش، با ما در ارتباط باشید.</b><div><a data-instagram href="#">◎</a><a data-whatsapp href="#">◉</a></div></div>
+    </aside>
+    <div class="products-area"><div id="products-grid" class="products-grid"><div class="loading">در حال بارگذاری محصولات...</div></div><div id="pagination" class="pagination"></div></div>
   </div>
 </section>
-<section id="about" class="about-section"><div><p class="eyebrow">ABOUT ELVO</p><h2>چوب، ساده و ماندگار</h2><p>ELVO WOOD روی اکسسوری‌های چوبی آشپزخانه تمرکز دارد؛ محصولاتی کاربردی که با فرم ساده و بافت طبیعی چوب، بخشی از دکور خانه می‌شوند.</p></div><div class="about-quote">«جزئیات کوچک، حال‌وهوای یک آشپزخانه را تغییر می‌دهند.»</div></section>
-<section id="contact" class="contact-banner"><div><p class="eyebrow">ORDER & INQUIRY</p><h2>برای سفارش با ما در ارتباط باشید</h2><p>خرید و پرداخت آنلاین در سایت انجام نمی‌شود. برای استعلام قیمت و سفارش، با ما تماس بگیرید.</p></div><div class="contact-actions"><a id="wa" class="btn light" target="_blank">واتساپ</a><a id="ig" class="btn outline" target="_blank">اینستاگرام</a></div></section>
+<section id="about" class="about-section"><div class="about-quote"><span>«</span><p>چوبی که برای ماندن ساخته شده است.</p><span>»</span></div><div><span class="eyebrow dark">ABOUT ELVO WOOD</span><h2>طراحی ساده، حس طبیعی</h2><p>ELVO WOOD روی اکسسوری‌های چوبی کاربردی برای آشپزخانه تمرکز دارد؛ محصولاتی که بافت و گرمای چوب را وارد زندگی روزمره می‌کنند.</p></div></section>
+<section id="contact" class="contact-banner"><div><span class="eyebrow">ELVO WOOD</span><h2>با ما در ارتباط باشید</h2><p>برای ثبت سفارش، استعلام قیمت یا دریافت راهنمایی با ما تماس بگیرید.</p></div><div class="contact-actions"><a class="btn light" data-whatsapp href="#">واتساپ</a><a class="btn outline" data-instagram href="#">اینستاگرام</a></div></section>
 </main>
-<footer><div class="footer-inner"><div class="brand footer-brand"><span>ELVO</span><small>WOOD</small></div><p>Wooden Accessories for a Better Life</p><div class="footer-links"><a href="#contact">تماس با ما</a><a href="#about">درباره ما</a><a href="#products">محصولات</a><a href="index.html">خانه</a></div></div></footer>
-<script src="config.js"></script><script src="app.js"></script>
+<footer><div class="footer-inner"><div class="footer-brand"><img src="assets/elvo-logo.svg" alt="ELVO WOOD"><p>Wooden Accessories for a Better Life</p></div><div class="footer-social">◎ &nbsp; ◉</div><nav class="footer-links"><a href="index.html">خانه</a><a href="#products">محصولات</a><a href="#about">درباره ما</a><a href="#contact">تماس با ما</a></nav></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="config.js"></script><script src="app.js"></script>
 </body></html>

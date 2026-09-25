@@ -1,18 +1,12 @@
-ELVO WOOD V6 — Supabase connected catalog
-===========================================
+ELVO WOOD V8 FINAL — High Fidelity
 
-This is a real Supabase-connected static site + admin panel.
-No checkout, cart, payment, or online purchase is included.
+این نسخه بر اساس رفرنس تصویری تاییدشده ساخته شده است:
+- پس‌زمینه sage کمی سبزتر شده.
+- هدر، هیرو، سایدبار محصولات، گرید محصولات و فوتر با همان ساختار رفرنس.
+- موبایل responsive با سایدبار فشرده و گرید دو ستونه.
+- Supabase حفظ شده و اگر محصول واقعی در دیتابیس باشد همان محصولات نمایش داده می‌شوند.
+- اگر هنوز محصولی در دیتابیس نباشد، تصاویر نمونه برای پیش‌نمایش ظاهر سایت نمایش داده می‌شوند.
+- checkout/cart/payment ندارد.
+- product.html و admin.html از ساختار عملکردی نسخه قبل حفظ شده‌اند.
 
-1) In Supabase SQL Editor, run setup.sql ONCE.
-2) Keep product-images and product-360 buckets public.
-3) Open admin.html through a web server (not directly from Android file://).
-4) Sign in using the Supabase Auth user you created.
-5) Add products, main images, gallery images, and ordered 360 frames.
-6) index.html and product.html read the same Supabase data.
-
-IMPORTANT:
-- config.js contains the Supabase Project URL and PUBLISHABLE key only.
-- Never put a Supabase Secret key in browser code.
-- Replace the placeholder WhatsApp and Instagram values in config.js before launch.
-- For a production launch, deploy this folder to Vercel/Netlify/GitHub Pages or another HTTPS web host.
+برای انتشار: محتویات این پوشه را در ریشه repository گیت‌هاب جایگزین کنید، commit/push بزنید و Vercel را deploy کنید.
