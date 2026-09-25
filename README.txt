@@ -1,12 +1,9 @@
-ELVO WOOD V8 FINAL — High Fidelity
-
-این نسخه بر اساس رفرنس تصویری تاییدشده ساخته شده است:
-- پس‌زمینه sage کمی سبزتر شده.
-- هدر، هیرو، سایدبار محصولات، گرید محصولات و فوتر با همان ساختار رفرنس.
-- موبایل responsive با سایدبار فشرده و گرید دو ستونه.
-- Supabase حفظ شده و اگر محصول واقعی در دیتابیس باشد همان محصولات نمایش داده می‌شوند.
-- اگر هنوز محصولی در دیتابیس نباشد، تصاویر نمونه برای پیش‌نمایش ظاهر سایت نمایش داده می‌شوند.
-- checkout/cart/payment ندارد.
-- product.html و admin.html از ساختار عملکردی نسخه قبل حفظ شده‌اند.
-
-برای انتشار: محتویات این پوشه را در ریشه repository گیت‌هاب جایگزین کنید، commit/push بزنید و Vercel را deploy کنید.
+ELVO WOOD V10 FINAL
+- Final visual version based on the approved ELVO WOOD design.
+- Demo products are temporary visual/demo content and can be deleted later from the admin panel.
+- WhatsApp: 09390792997
+- Telegram: https://t.me/ELVOWOOD
+- Instagram is intentionally removed for now.
+- Workshop: Karaj, Mohammadshahr, Shahrak Amir Kabir, Habib Ibn Mazaher St.
+- No checkout/payment is included.
+- Real products can be added from the admin panel after the design is finalized.
